@@ -1,0 +1,116 @@
+/**
+ * index.scss
+ * - Add any styles you want here!
+ */
+
+body {
+  background: #000000;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #006bb3;
+  color: white;
+  padding: 30px;
+  width: 1350px;
+  font-size: 46px;
+  border-style: solid;
+  border-width: 2.1px;
+  border-color:#ffffff;
+  font-family: "Verdana", Sans, serif;
+  border-radius: 9px
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: right;
+  background-color:  #006bb3;
+  min-width: 400px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #ffffff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 25px;
+  font-family: "Verdana", Sans, serif;
+  border-style: ridge;
+  border-width: 0.41px;
+  border-color: #d9d9d9;
+  border-radius: 4px;
+}
+/*password styles*/
+ h1 {
+  text-align: center;
+  font-size: 90px;
+  padding:70px 16px ;
+  font-family: "Verdana", Sans, serif;
+  color: #004d99;
+}
+input{ 
+  width: 45%;
+  padding: 12px 20px;
+  display: block;
+  margin : 0 auto;
+  border: 1px solid;
+  border-color:#e6f2ff;
+  border-radius: 9px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 28px;
+}
+input[type=submit] {
+  width: 20%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  display: block;
+  margin : 0, auto;
+  /*margin: 8px 0;*/
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+input[type=submit]:hover {
+  
+  background-color: #45a049;
+}
+
+.fomore {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  display: block;
+  margin : 0, auto;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 30px;
+  
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #002e4d;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #003d66;}
