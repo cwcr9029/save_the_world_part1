@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Choose your algorithm!</title>
   
   <!--  Styles  -->
@@ -13,7 +13,7 @@
   <button class="dropbtn">Choose your algorithm!<div class="triangle-down"></div></button>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-.triangle-down {
+  .triangle-down {
 	width: 0;
 	height: 0;
 	border-left: 25px solid transparent;
@@ -23,8 +23,19 @@
   bottom: 30px;
   left: 1200px;
 }
+a.button-link {
+  text-decoration: none;
+  color:white;
+}
+
+p.pinreqs {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  border-color: white;
+}
 </style>
-   
+
   <div class="dropdown-content">
     <a href="#">RSA</a>
     <a href="#">3DES</a>
@@ -39,15 +50,19 @@
 <!--Passowrd entering form -->
 <form method='post' action="{{url_for('encrypted')}}">
   <h1>Enter a Password (Pin):</h1>
-  <input type="password" name="pwd" placeholder="Let's decrypt your Pin....">
+  <p class="pinreqs">The pin should contain 6 digits from 0-9 and should not start with 0</p>
+  {% for error in g.errors %}
+  <div style="color: white;background-color: red;font-size:30px;text-align: center;">{{error}}</div>
+  {% endfor %}
+  <input type="password" name="pwd" placeholder="Enter a pin" required>
   <br>
   <input type="submit" value="Submit">
   <!--some spacings using heading attribute-->
 </form>
 <!--button to find out more-->
 <div class="fomore">
-  <button class="fomore">How does the algorithm work?<a href = "index2.html"></button>
+  <button class="fomore"><a class="button-link" href = "{{url_for('info')}}">How does the algorithm work?</a></button>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+</div>
 </body>
 </html>

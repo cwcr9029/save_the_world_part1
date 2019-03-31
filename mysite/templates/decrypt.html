@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <link rel="stylesheet" href="styles/index3.css">
+  </head>
+ <body>
+ <p>This is the encrypted form of your pin: {{message}} </p>  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <p>Get a friend to decrypt it for you! (or you can try it yourself)<br>
+   Here is the formula!</p><meta name="viewport" content="width=device-width, initial-scale=1">
+   
+   <img src="https://kifanga.com/wp-content/uploads/2018/08/rsa-algorithm.jpg" width='100%'' >
+   
+  <p>Encrypted Message: {{message}} <br> Public key: {{public}} <br> Private key: {{private}}</p>  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <p>where m refers  to message, d is the private key, and n is the public key. Mod refers to the modulus function. <br>
+    <a href='https://www.mtholyoke.edu/courses/quenell/s2003/ma139/js/powermod.html' target="_blank">You can use this calculator to compute the pin</a>
+  </p><meta name="viewport" content="width=device-width, initial-scale=1">
+  <form action="{{ url_for('check')}}" method="post">
+  <input type="text" name="answer" placeholder="Enter your decrypted number(c)...." size='50'>
+  <br>
+  <input type="submit" value="Submit" required > 
+  </form>    
+</body>
+</html>

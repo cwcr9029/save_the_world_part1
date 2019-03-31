@@ -11,8 +11,8 @@ We can lower number of digits in pin if its too slow'''
 
 
 def encrypt(message):
-    '''takes message as a string, returns encrypted form followed by
-     public key as a tuple (n,e) then private key d'''
+    '''takes message as a string, returns encypted form, public key, 
+    private key as tuple c,n,d'''
     prime_list = []
 
     with open('prime_numbers.txt','r') as f:

@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <link rel="stylesheet" href="styles/index2.processed.css">
+  </head>
+ <button class="title">An introduction to the RSA Algorithm</button>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+<button class="para1">Public-key cryptography uses  pairs of keys: public keys which may be disseminated widely, and private keys which are known only to the owner.
+</button>  
+
+  <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Public-key-crypto-1.svg"alt="The process"style="width:80%">
+  
+ <button class="para1"> Here's a analogy. John wants to send a secret message from between him and his friend, James. John unlocks the lock, and passes it to James, and keeps the key. This is known as a "public lock" since anyone has the ability to take the lock. </button>
+  
+ <button class="para1">James takes the lock and places his message inside a box and locks it up with the lock. This lock is then sent back to John, who uses the key to unlock the box. </button>
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Private_key_signing.png"alt="The process"style="width:80%">
+  
+ <button class="para1"> The generation of such keys depends on cryptographic algorithms based on mathematical problems to produce one-way functions. Effective security only requires keeping the private key private; the public key can be openly distributed without compromising security</button>
+  
+<button class="para1"> RSA encryption works under the premise that the algorithm is easy to compute in one direction, but almost impossible in reverse. Another interesting aspect of this equation is that it is simple to figure out one of the prime numbers if you already have the other one, as well as the product. If you are told that 701,111 is the result of 907 multiplied by another prime number, you can figure it out the other prime with the following equation:
+<br><br>
+701,111 / 907 = 773
+<br> <br>
+Since the relationship between these numbers is simple to compute in one direction, but incredibly hard in reverse, the equation is known as a trap door function. Be aware that while the above example is hard for people to figure out, computers can do the operation in a trivial amount of time.
+<br>
+<br>
+Because of this, RSA uses much larger numbers. The size of the primes in a real RSA implementation varies, but in 2048-bit RSA, they would come together to make keys that are 617 digits long. To help you visualize it, a key would be a number of this size:
+</button>
+  <img src="http://docsdrive.com/images/ansinet/jas/2006/fig2-2k6-458-481.gif"alt="The process"style="width:50%">
+  
